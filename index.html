@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-position</title>
+    <style>
+           .box {
+                position:relative;
+
+            }
+            .boy {
+                z-index: 2;
+            }
+            .ring {
+                top:-70px;
+                z-index: 1;
+            }
+            .water {
+                top:-150px
+            }
+            h3::after{
+                content: '.xyz';
+                color: salmon;
+                font-size: 20px;
+                background-color: cornflowerblue;
+            }
+            h3::before{
+                content: 'MR';
+                color: blue;
+                font-size: 20px;
+                background-color: yellow;
+            }
+            p::first-letter {
+                font-size: 3em;
+            }
+            p::first-line {
+                background-color: blueviolet;
+            }
+            ::selection {
+                background-color: greenyellow;
+            }
+            input::placeholder {
+                color: aquamarine;
+            }
+
+
+    </style>
+
+</head>
+<body>
+       <h1> Z index</h1>
+        <div class="swim-continer">
+            <div class="box boy"><img src="images/boy.svg" alt=""></div>
+            <div class="box ring"><img src="images/ring.svg" alt=""></div>
+            <div class="box water"><img src="images/water.svg" alt=""></div>
+
+        </div>
+
+
+        <div>
+            <h3> Heading -1 </h3>
+            <h3> Heading -2 </h3>
+            <h3> Heading -3 </h3>
+        </div>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod minima maxime dignissimos quibusdam ad quisquam! Obcaecati sequi natus cum omnis.
+        </p>
+
+        <p>
+            Fugiat corrupti, neque modi id magnam quam fuga quas itaque tempore temporibus beatae ullam doloribus quaerat soluta voluptatem sunt! Aspernatur?
+        </p>
+        <p>
+            Voluptas consequuntur doloribus, consequatur repellendus neque quibusdam voluptates laborum dignissimos minima ab nihil doloremque, itaque eveniet saepe omnis commodi officiis.
+        </p>
+
+        <input type="text" placeholder="type your bio">
+
+</body>
+</html>
